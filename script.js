@@ -25,7 +25,7 @@ document.getElementById('sequence-form').addEventListener('submit', async functi
             } else if (response.status === 403 && !captchaValidated) {
                 await new Promise((resolve) => {
                     AwsWafCaptcha.renderCaptcha(captchaContainer, {
-                        apiKey: "YOUR_API_KEY",
+                        apiKey: "iWrREWw9+T2ijgrchP7yURb9SFwPckCl+rgo9nHMNpRgoWOyLNP2NJvyHGfX54z8cS27AObqd7XQC0VZIHk3c7dMQDrAbG7qyDvlWX4z1RZ4z9gzpP8MRgnC+iC4nOtK14OaCoIyYov8FqlTf3EK4xDgfaj1xc/2NTVopF30g3I7KS7ZhQTKEZXB/xusH7yqEAbbkt9UpqRH7i6iCNC8etq2FqRxoTSz/wxEnI0zpozlDiGYLMoIVFdXZDVbM+WGnGpgluEC4MCGDTTghns3XvVJCVX9dMRSA1+95uBAnxONZr3Aq5izKq8ygxHvQjJrd2a+aRImE7ebTY9Sw8H9027b/aO0phwvA0UakNjWWMDax7Kq+OEV5eT7GlEiEMUpvomL2PoUbf+ZwTG1jWYC2iW0BGN3jKBEO2u9AQncbt5Jq+j/BZuukSYpI7V4Dwi364XoGPNrxbX2NJnh83+z5fdjvw4foVzPi8ZWghurJn/6sa3RLsS8573uRfjHIL4UVaO3e0chIKyEkVVmgtSOmKeQ/MKhDhajT6EECrkjvDdY+DJ9tGO4GlqBeYDzezkpGq1Hd0dgDvWKClwzK2q3iQd74tf+TIgornMqSS3OQ7Lf5fRFXjN12TyATogULvQk4Fw93hhzw+E9OLz/fp4ghd9wzMDPBvYu4oJlwi6Hopw=_0_1",
                         onSuccess: () => {
                             captchaValidated = true;
                             resolve();
