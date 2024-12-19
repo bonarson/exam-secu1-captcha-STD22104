@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbidden Sequence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://f4df95ce5d70.us-east-1.captcha-sdk.awswaf.com/f4df95ce5d70/jsapi.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="sequence-form">
+            <label for="number">Enter a number (1-1000):</label>
+            <input type="number" id="number" name="number" min="1" max="1000" required />
+            <button type="submit">Generate Sequence</button>
+        </form>
+        <div id="output-container" style="display: none;"></div>
+        <div id="captcha-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
